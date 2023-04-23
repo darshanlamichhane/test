@@ -1,0 +1,59 @@
+.leftbar{
+    flex:2;
+    position: sticky;
+    top: 70px;
+    height: 500px;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display:none;
+    }
+    img{
+        border-radius: 50%;
+        width:40px;
+        height:40px;
+        object-fit: cover;
+    }
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        gap: 20px;
+        .user{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }   
+        .suggestion{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }   
+        .find{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }  
+        .interest{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }    
+        .startAConvo{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }   
+        .homeIcon{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }   
+        .suggestion{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }   
+    }
+
+
+}
