@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import './register.scss'
 
-
 function Register() {
   return (
     <div className='register'>

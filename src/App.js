@@ -5,6 +5,7 @@ import Leftbar from "./components/leftbar/Leftbar";
 import Rightbar from "./components/rightbar/Rightbar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
+import Interest from "./pages/interests/Interest";
 import './styles.scss'
 import { Navigate } from 'react-router-dom';
 import {
@@ -12,6 +13,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+//import Interest from "./pages/interests/Interest";
 
 function App() {
 
@@ -38,19 +40,25 @@ function App() {
   }
 
   const router = createBrowserRouter([
+    
     {
       path: "/",
       element: <ProtectedRoute>
         <Layout/>
-        </ProtectedRoute>,
-      children:[{
+        </ProtectedRoute>, 
+      children:[
+        {
+      path:"/interest",
+      element:<Interest/>,
+    },
+        {
         path:'/',
         element: <Home/>,
-    },
-    {
-      path:"/profile/:id",
-      element: <Profile/>,
-    },
+        },
+        {
+        path:"/profile/:id",
+        element: <Profile/>,
+        },
   ]
     },
     {
@@ -65,11 +73,9 @@ function App() {
 
   return (
     // <div> className='theme-dark'></div>
-
     <div className="App">
       <RouterProvider router={router} />
     </div>
-    
   );
 }
 

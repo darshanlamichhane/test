@@ -4,11 +4,19 @@
     gap: 50px;
     padding:20px;
 
+    .post{
+        display: flex;
+        flex-direction: column;
+        //filter: drop-shadow(1px 1px 0.09px #eadddd);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     .buttons{
         display:flex;
         align-items:center;
+        justify-content: space-between;
         gap:20px;
-
+        padding:10px;
         .item{
             display:flex;
             align-items:center;
@@ -21,9 +29,9 @@
         display:flex;
         flex-direction:column;
         padding:10px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        // -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        // -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
        margin:20px;
         img{
             max-height:500px;
@@ -41,6 +49,7 @@
         display:flex;
         flex-direction:column;
         align-items:center;
+        padding:20px;
         justify-content:space-between;
         // gap:20px;
         
@@ -70,5 +79,5 @@
 
 
     }
-    
+}
 }
